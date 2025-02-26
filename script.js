@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         <h3>Alterações:</h3>
         <ul>${versao.alteracoes.map(item => `<li>${item}</li>`).join("")}</ul>
         <div class="btn-group">
-          <a href="/coming-soon.html" class="btn">Ver Documentação</a>
+          <a href="coming-soon.html" class="btn">Ver Documentação</a>
           <a href="${versao.download}" class="btn btn-download" ${isDownload}>
             <span class="material-icons">download</span> Baixar
           </a>
