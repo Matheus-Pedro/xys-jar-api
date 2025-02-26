@@ -1,0 +1,51 @@
+{
+  "titulo": "Histórico de Versões da API de desenvolvimento.",
+  "descricao": "Aqui você encontra todas as mudanças implementadas ao longo do tempo. Acompanhe as novidades e atualize sua aplicação.",
+  "versoes": [
+    {
+      "id": "v1",
+      "versao": "1.0",
+      "data": "Fevereiro de 2025",
+      "descricao": "Primeira versão da API.",
+      "alteracoes": [
+        "Adicionado endpoint `/users` para gerenciamento de usuários.",
+        "Melhorias de performance.",
+        "Correções de bugs menores.",
+        "Documentação inicial.",
+        "Implementação de autenticação com JWT."
+      ],
+      "documentacao": "",
+      "download": "",
+      "tag": ""
+    },
+    {
+      "id": "v1-1",
+      "versao": "1.1",
+      "data": "Fevereiro de 2025",
+      "descricao": "Novos endpoints e melhorias.",
+      "alteracoes": [
+        "Correção de segurança no endpoint `/users`.",
+        "Novo endpoint `/configurations`.",
+        "Atualizações na documentação."
+      ],
+      "documentacao": "",
+      "download": "",
+      "tag": "Obsoleto"
+    },
+    {
+      "id": "v1-2",
+      "versao": "1.2",
+      "data": "Fevereiro de 2025",
+      "descricao": "Refatoração completa da API e correção do CORS.",
+      "alteracoes": [
+        "Refatoração completa da API.",
+        "Correção do CORS.",
+        "Atualizações na documentação.",
+        "Melhoria na segurança."
+      ],
+      "documentacao": "#",
+      "download": "xys-1.2.0-SNAPSHOT.jar",
+      "tag": "Beta"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+/* Reset básico */
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* ====== NAV LATERAL ====== */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 220px;
+    background: #111;
+    color: #fff;
+    overflow-y: auto;
+    padding-top: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: #ffc107;
+    color: #000;
+  }
+  
+  /* ====== CONTEÚDO PRINCIPAL ====== */
+  .content {
+    margin-left: 240px;
+    padding: 30px;
+    max-width: 1000px;
+  }
+
+  #intro {
+    margin-bottom: 30px;
+  }
+  
+  .version {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #ffc107;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .version-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* ====== TAGS ====== */
+  .tag {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .tag-estavel {
+    background: #28a745;
+  }
+  
+  .tag-obsoleto {
+    background: #dc3545;
+  }
+  
+  .tag-beta {
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .tag-padrao {
+    background: #6c757d;
+  }
+  
+  /* ====== BOTÕES ====== */
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 16px;
+    background: #ffc107;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  
+  .btn-download:hover {
+    background: #0056b3;
+  }
+  
+  .btn:hover {
+    background: #e0a800;
+  }
+  
+  .material-icons {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    /* Menu se transforma em um carrossel horizontal no mobile */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      overflow-x: auto;       /* Permite rolagem horizontal */
+      white-space: nowrap;    /* Mantém os itens em uma única linha */
+      padding: 5px 0;
+    }
+    
+    /* Exibe os itens do menu como um carrossel */
+    nav ul {
+      display: flex;
+      gap: 10px;
+      padding: 0 20px;
+      overflow-x: auto;
+      scrollbar-width: none;  /* Oculta barra no Firefox */
+    }
+    
+    nav ul::-webkit-scrollbar {
+      display: none;          /* Oculta barra no Chrome */
+    }
+    
+    nav ul li {
+      flex-shrink: 0;
+    }
+    
+    nav a {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 0.9rem;
+      background: #222;
+      border-radius: 6px;
+    }
+    
+    nav a:hover {
+      background: #ffc107;
+      color: #000;
+    }
+    
+    /* Empurra o conteúdo para baixo para não ser coberto pelo menu */
+    .content {
+      margin: 0;
+      padding-top: 120px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+
+/* ====== EM BREVE ====== */
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .coming-soon h1 {
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+  }
+  
+  .coming-soon p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #555;
+  }
+  
+  /* Animação de loading */
+  .loading {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffc107;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .coming-soon h1 {
+      font-size: 2.5rem;
+    }
+    .coming-soon p {
+      font-size: 1rem;
+    }
+  }
+  
